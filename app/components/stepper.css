@@ -1,0 +1,55 @@
+.step-item {
+  @apply relative flex-1 after:content-[''] after:w-0.5 after:h-full after:inline-block after:absolute after:left-1/2;
+}
+
+.step-item:not(:first-child):after {
+  @apply bg-neutral-600 -bottom-12;
+}
+
+.step-item p {
+  @apply text-neutral-400;
+}
+
+.step-item .card-icon svg {
+  @apply fill-neutral-400;
+}
+
+.step {
+  @apply flex items-center gap-3.5 bg-neutral-700 p-3.5 rounded-xl relative z-10 border border-neutral-700 w-full;
+}
+
+.active:after {
+  @apply bg-yellow-600 -bottom-11;
+}
+
+.complete:after {
+  @apply bg-yellow-600 -bottom-11;
+}
+
+.card-icon {
+  @apply rounded-lg bg-neutral-600 flex items-center justify-center;
+}
+
+.complete p, .active p {
+  @apply text-white;
+}
+
+.active .step,
+.complete .step {
+  @apply bg-stone-600 border-yellow-500;
+}
+
+.active:not(:first-child):after,
+.complete:not(:first-child):after {
+  @apply bg-yellow-600;
+}
+
+.active .card-icon svg,
+.complete .card-icon svg {
+  @apply fill-neutral-700
+}
+
+.active .card-icon,
+.complete .card-icon {
+  @apply bg-yellow-500;
+}
