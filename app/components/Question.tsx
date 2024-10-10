@@ -18,7 +18,7 @@ export const Question = ({ question }: Props) => {
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
         {
-          question.response.map(({ before, after }, index) => (
+          question.response.map(({ before }, index) => (
             <div key={ index } className="flex justify-center items-center bg-stone-600 p-3.5 rounded-xl text-neutral-400">
               { before }
             </div>
