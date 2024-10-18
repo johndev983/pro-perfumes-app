@@ -1,8 +1,10 @@
+import { memo } from 'react'
+
 interface Props {
   children: React.ReactNode;
 }
 
-export const CardIcon = ({ children }: Props) => {
+const Component = memo(({ children }: Props) => {
   return (
     <div className="card-icon">
       <span className="p-3">
@@ -12,4 +14,8 @@ export const CardIcon = ({ children }: Props) => {
       </span>
     </div>
   )
-}
+})
+
+Component.displayName = 'CardIcon';
+
+export const CardIcon = memo(Component);

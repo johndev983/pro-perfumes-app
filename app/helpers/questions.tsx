@@ -106,7 +106,7 @@ export const questions: Question[] = [
         after: 'Demasiado ligero.'
       },
       {
-        before: 'Fresco',
+        before: 'Florales',
         after: 'No soy fan de las flores.'
       },
       {

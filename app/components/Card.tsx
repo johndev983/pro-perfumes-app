@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { CardContent, CardIcon } from './'
 
 interface Props {
@@ -6,7 +7,7 @@ interface Props {
   title:    string;
 }
 
-export const Card = ({ icon, subTitle, title }: Props) => {
+const Component = ({ icon, subTitle, title }: Props) => {
   return (
     <div className="flex items-center justify-center gap-8 w-full max-w-sm">
       <div className="step">
@@ -16,3 +17,7 @@ export const Card = ({ icon, subTitle, title }: Props) => {
     </div>
   )
 }
+
+Component.displayName = 'Card';
+
+export const Card = memo(Component);
