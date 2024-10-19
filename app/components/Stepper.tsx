@@ -1,6 +1,6 @@
 'use client'
 
-import { Back, Card, Displace, Loading, Next, Question } from './'
+import { Back, Card, Displace, Finish, Next, Question } from './'
 import { questions } from '../helpers/questions'
 import { useStepper } from '../hooks/';
 
@@ -65,10 +65,9 @@ export const Stepper = () => {
 
       {
         isComplete && (
-          <Loading />
+          <Finish />
         )
       }
-
     </>
   );
 };
