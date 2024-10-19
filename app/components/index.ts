@@ -3,6 +3,7 @@ export * from './Card';
 export * from './CardContent';
 export * from './CardIcon';
 export * from './Displace'
+export * from './Loading';
 export * from './NavigationLine';
 export * from './Next';
 export * from './Question';

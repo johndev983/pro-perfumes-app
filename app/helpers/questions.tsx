@@ -1,4 +1,4 @@
-import { Question } from '../interfaces/question.interface'
+import { Question } from '../interfaces'
 
 export const questions: Question[] = [
   {
@@ -8,6 +8,7 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Cuál es tu rango de edad?",
+    reference: "basicData",
     response: [
       {
         before: '18 - 25',
@@ -15,18 +16,18 @@ export const questions: Question[] = [
       },
       {
         before: '26 - 35',
-        after: 'En la flor de la vida.'
+        after: 'En la flor de la vida'
       },
       {
         before: '36 - 45',
-        after: 'Con experiencia y estilo.'
+        after: 'Con experiencia y estilo'
       },
       {
         before: '46 +',
-        after: 'Elegancia y sabiduría.'
+        after: 'Elegancia y sabiduría'
       }
     ],
-    subTitle: "Comienza tu viaje olfativo aquí.",
+    subTitle: "Comienza tu viaje olfativo aquí",
     title: "Datos Básicos"
   },
   {
@@ -36,42 +37,43 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Qué tipo de aromas te hacen sentir increíble? (Puedes elegir más de uno)",
+    reference: "scent",
     response: [
       {
         before: 'Amaderado',
-        after: 'Como un paseo por el bosque.'
+        after: 'Como un paseo por el bosque'
       },
       {
         before: 'Aromático',
-        after: 'Fresco y lleno de vida.'
+        after: 'Fresco y lleno de vida'
       },
       {
         before: 'Fresco especiado',
-        after: 'Un toque de aventura.'
+        after: 'Un toque de aventura'
       },
       {
         before: 'Fresco',
-        after: 'Como una brisa marina.'
+        after: 'Como una brisa marina'
       },
       {
         before: 'Florales',
-        after: 'Un jardín en primavera.'
+        after: 'Un jardín en primavera'
       },
       {
         before: 'Atalcado',
-        after: 'Suave y reconfortante.'
+        after: 'Suave y reconfortante'
       },
       {
         before: 'Cálido especiado',
-        after: 'Exótico y misterioso.'
+        after: 'Exótico y misterioso'
       },
       {
         before: 'Lavanda',
-        after: 'Relajante y calmante.'
+        after: 'Relajante y calmante'
       },
       {
         before: 'Cítrico',
-        after: 'Energizante y vibrante.'
+        after: 'Energizante y vibrante'
       },
       {
         before: 'Canela',
@@ -88,46 +90,47 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Qué aromas prefieres evitar? (Puedes elegir más de uno)",
+    reference: "scentToAvoid",
     response: [
       {
         before: 'Amaderado',
-        after: 'Demasiado terroso.'
+        after: 'Demasiado terroso'
       },
       {
         before: 'Aromático',
-        after: 'No es lo mío.'
+        after: 'No es lo mío'
       },
       {
         before: 'Fresco especiado',
-        after: 'Prefiero algo más suave.'
+        after: 'Prefiero algo más suave'
       },
       {
         before: 'Fresco',
-        after: 'Demasiado ligero.'
+        after: 'Demasiado ligero'
       },
       {
         before: 'Florales',
-        after: 'No soy fan de las flores.'
+        after: 'No soy fan de las flores'
       },
       {
         before: 'Atalcado',
-        after: 'Demasiado polvoriento.'
+        after: 'Demasiado polvoriento'
       },
       {
         before: 'Cálido especiado',
-        after: 'Demasiado intenso.'
+        after: 'Demasiado intenso'
       },
       {
         before: 'Lavanda',
-        after: 'No me relaja.'
+        after: 'No me relaja'
       },
       {
         before: 'Cítrico',
-        after: 'Demasiado ácido.'
+        after: 'Demasiado ácido'
       },
       {
         before: 'Canela',
-        after: 'No me gusta el picante.'
+        after: 'No me gusta el picante'
       }
     ],
     subTitle: "Evita lo que no te gusta.",
@@ -140,6 +143,7 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Cuál es tu estilo de vida?",
+    reference: "lifestyle",
     response: [
       {
         before: 'Activo y deportivo',
@@ -147,15 +151,15 @@ export const questions: Question[] = [
       },
       {
         before: 'Tranquilo y relajado',
-        after: 'Disfrutando de la calma.'
+        after: 'Disfrutando de la calma'
       },
       {
         before: 'Aventurero y viajero',
-        after: 'Explorando el mundo.'
+        after: 'Explorando el mundo'
       },
       {
         before: 'Creativo y artístico',
-        after: 'Inspiración en cada esquina.'
+        after: 'Inspiración en cada esquina'
       }
     ],
     subTitle: "Personaliza tu experiencia.",
@@ -168,18 +172,19 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Cuál es tu profesión?",
+    reference: "profession",
     response: [
       {
         before: 'Oficina/Corporativo',
-        after: 'Elegancia y profesionalismo.'
+        after: 'Elegancia y profesionalismo'
       },
       {
         before: 'Creativo/Artístico',
-        after: 'Originalidad y estilo.'
+        after: 'Originalidad y estilo'
       },
       {
         before: 'Salud/Educación',
-        after: 'Cuidado y dedicación.'
+        after: 'Cuidado y dedicación'
       },
       {
         before: 'Otros',
@@ -196,10 +201,11 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Para qué ocasión buscas el perfume?",
+    reference: "chance",
     response: [
       {
         before: 'Uso diario',
-        after: 'Para sentirte bien todos los días.'
+        after: 'Para sentirte bien todos los días'
       },
       {
         before: 'Eventos',
@@ -207,11 +213,11 @@ export const questions: Question[] = [
       },
       {
         before: 'Noches',
-        after: 'Para dejar una impresión duradera.'
+        after: 'Para dejar una impresión duradera'
       },
       {
         before: 'Trabajo',
-        after: 'Profesional y confiable.'
+        after: 'Profesional y confiable'
       }
     ],
     subTitle: "Un aroma para cada momento.",
@@ -224,21 +230,22 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Qué intensidad de perfume prefieres?",
+    reference: "intensity",
     response: [
       {
         before: 'Ligero y fresco',
-        after: 'Un toque sutil.'
+        after: 'Un toque sutil'
       },
       {
         before: 'Moderado',
-        after: 'Equilibrado y perfecto.'
+        after: 'Equilibrado y perfecto'
       },
       {
         before: 'Intenso y duradero',
         after: '¡Que deje huella!'
       }
     ],
-    subTitle: "Elige la intensidad que te define.",
+    subTitle: "Elige la intensidad que te define",
     title: "Intensidad"
   },
   {
@@ -248,6 +255,7 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Qué notas te atraen más en un perfume? (Puedes elegir más de una)",
+    reference: "olfactoryNotes",
     response: [
       {
         before: 'Florales (Rosa, Jazmín)',
@@ -255,27 +263,27 @@ export const questions: Question[] = [
       },
       {
         before: 'Especiadas (Canela, Clavo)',
-        after: 'Picante y exótico.'
+        after: 'Picante y exótico'
       },
       {
         before: 'Amaderadas (Sándalo, Cedro)',
-        after: 'Profundo y terroso.'
+        after: 'Profundo y terroso'
       },
       {
         before: 'Cítricas (Limón, Bergamota)',
-        after: 'Fresco y vibrante.'
+        after: 'Fresco y vibrante'
       },
       {
         before: 'Acuáticas (Brisa Marina)',
-        after: 'Ligero y refrescante.'
+        after: 'Ligero y refrescante'
       },
       {
         before: 'Frutales (Manzana, Pera)',
-        after: 'Dulce y jugoso.'
+        after: 'Dulce y jugoso'
       },
       {
         before: 'Verdes (Hierbas, Hojas)',
-        after: 'Natural y fresco.'
+        after: 'Natural y fresco'
       }
     ],
     subTitle: "Descubre tu combinación perfecta.",
@@ -288,22 +296,23 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Qué estación del año prefieres para usar perfume?",
+    reference: "season",
     response: [
       {
         before: 'Primavera',
-        after: 'Flores y frescura.'
+        after: 'Flores y frescura'
       },
       {
         before: 'Verano',
-        after: 'Flores y frescura.'
+        after: 'Sol y diversión'
       },
       {
         before: 'Otoño',
-        after: 'Calidez y confort.'
+        after: 'Calidez y confort'
       },
       {
         before: 'Invierno',
-        after: 'Elegancia y profundidad.'
+        after: 'Elegancia y profundidad'
       }
     ],
     subTitle: "Refresca tu día a día.",
@@ -316,6 +325,7 @@ export const questions: Question[] = [
       />
     ),
     question: "¿Qué duración prefieres en un perfume?",
+    reference: "duration",
     response: [
       {
         before: 'Corto (2-3 horas)',
@@ -334,3 +344,16 @@ export const questions: Question[] = [
     title: "Duración"
   },
 ];
+
+export const preferencesData = {
+  basicData: '',
+  chance: '',
+  duration: '',
+  intensity: '',
+  lifestyle: '',
+  olfactoryNotes: '',
+  profession: '',
+  scent: '',
+  scentToAvoid: '',
+  season: '',
+}

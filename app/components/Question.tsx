@@ -15,7 +15,7 @@ export const Question = ({ onSaveResponse, currentQuestion }: Props) => {
 
   const handleOptionChange = useMemo(() => ( option: string ) => {
     setSelectedOption( option )
-    onSaveResponse( currentQuestion.title.toLowerCase().replace(/ /g, ''), option )
+    onSaveResponse( currentQuestion.reference, option )
 
   }, [ currentQuestion, onSaveResponse ])
 
@@ -28,7 +28,7 @@ export const Question = ({ onSaveResponse, currentQuestion }: Props) => {
         </svg>
       </span>
 
-      <h1 className="text-2xl lg:text-3xl">{ currentQuestion.question }</h1>
+      <h1 className="text-xl lg:text-2xl">{ currentQuestion.question }</h1>
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
         {
