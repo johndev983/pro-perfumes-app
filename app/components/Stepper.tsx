@@ -5,7 +5,7 @@ import { questions } from '../helpers/questions'
 import { useStepper } from '../hooks/';
 
 export const Stepper = () => {
-  const { currentStep, isComplete, onSaveResponse, onStepChange } = useStepper();
+  const { currentStep, isComplete, onSaveResponse, onStepChange, response } = useStepper();
 
   return (
     <>
@@ -65,7 +65,7 @@ export const Stepper = () => {
 
       {
         isComplete && (
-          <Finish />
+          <Finish data={ response } />
         )
       }
     </>

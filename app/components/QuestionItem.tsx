@@ -10,7 +10,7 @@ export const QuestionItem = ({ after, before, isSelected, onClick }: Props) => {
   
   return (
     <button
-      onClick={ () => onClick( after ) }
+      onClick={ () => onClick( before ) }
       className={`button-questions ${ isSelected ? 'selected' : '' }`}
     >
       { content }

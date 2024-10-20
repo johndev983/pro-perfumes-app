@@ -1,23 +1,17 @@
 'use client'
 
-import { useMemo, useState } from 'react'
-import { QuestionItem } from './QuestionItem'
+import { QuestionItem } from './'
 
-import { Question as QuestionInteface } from '../interfaces/question.interface'
+import { Question as QuestionInterface } from '../interfaces'
+import { useQuestion } from '../hooks';
 
 interface Props {
-  onSaveResponse:   (property: string, response: string | string[]) => void
-  currentQuestion:  QuestionInteface;
+  onSaveResponse:   (property: string, response: string | string[]) => void;
+  currentQuestion:  QuestionInterface;
 }
 
 export const Question = ({ onSaveResponse, currentQuestion }: Props) => {
-  const [ selectedOption, setSelectedOption ] = useState<string | null>(null)
-
-  const handleOptionChange = useMemo(() => ( option: string ) => {
-    setSelectedOption( option )
-    onSaveResponse( currentQuestion.reference, option )
-
-  }, [ currentQuestion, onSaveResponse ])
+  const { handleOptionChange, isSelected } = useQuestion( currentQuestion, onSaveResponse );
 
   return (
     <>
@@ -36,7 +30,7 @@ export const Question = ({ onSaveResponse, currentQuestion }: Props) => {
             <QuestionItem
               { ...question }
               key={ index }
-              isSelected={ selectedOption === question.after }
+              isSelected={ isSelected( question.before ) }
               onClick={ handleOptionChange }
             />
           ))

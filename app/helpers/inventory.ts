@@ -4,63 +4,63 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Fresco', 'acuático'],
+    intensity: ['fresco', 'acuático'],
     name: 'Aqua di Gio Blanca',
     olfactoryNotes: ['bergamota', 'neroli', 'yuzu'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Aromático', 'acuático'],
+    intensity: ['aromático', 'acuático'],
     name: 'Aqua di Gio Azul',
     olfactoryNotes: ['marinas', 'lima', 'limón'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Amaderado', 'fresco'],
+    intensity: ['amaderado', 'fresco'],
     name: 'Aqua di Gio Negra',
     olfactoryNotes: ['bergamota', 'geranio', 'vetiver'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Fresco', 'cítrico'],
+    intensity: ['fresco', 'cítrico'],
     name: 'CK One Blanca',
     olfactoryNotes: ['limón', 'té verde', 'bergamota'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Fresco', 'floral'],
+    intensity: ['fresco', 'floral'],
     name: 'Lacoste Blanca',
     olfactoryNotes: ['pomelo', 'romero', 'tuberosa'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Verde', 'cítrico'],
+    intensity: ['verde', 'cítrico'],
     name: 'Lacoste Verde',
     olfactoryNotes: ['lima', 'notas verdes', 'tomillo'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Cítrico', 'aromático'],
+    intensity: ['cítrico', 'aromático'],
     name: 'Tommy',
     olfactoryNotes: ['menta', 'lavanda', 'toronja'],
-    scent: 'Cítricos'
+    scent: 'Cítrico'
   },
   {
     duration: '',
     gender: 'man',
-    intensity: ['Frutal', 'dulce'],
+    intensity: ['frutal', 'dulce'],
     name: '212 VIP',
     olfactoryNotes: ['maracuyá', 'ron', 'almizcle'],
     scent: 'Dulces'
@@ -68,7 +68,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Dulce', 'aromático'],
+    intensity: ['dulce', 'aromático'],
     name: '212 VIP Black',
     olfactoryNotes: ['absenta', 'lavanda', 'anís'],
     scent: 'Dulces'
@@ -76,7 +76,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Dulce', 'especiado'],
+    intensity: ['dulce', 'especiado'],
     name: 'One Million Normal',
     olfactoryNotes: ['canela', 'cuero', 'ámbar'],
     scent: 'Dulces'
@@ -84,7 +84,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Dulce', 'frutal'],
+    intensity: ['dulce', 'frutal'],
     name: 'One Million Lucky',
     olfactoryNotes: ['avellana', 'ciruela', 'miel'],
     scent: 'Dulces'
@@ -92,7 +92,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Dulce', 'amaderado'],
+    intensity: ['dulce', 'amaderado'],
     name: 'One Million Royal',
     olfactoryNotes: ['bergamota', 'ámbar', 'lavanda'],
     scent: 'Dulces'
@@ -100,7 +100,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Fresco', 'dulce'],
+    intensity: ['fresco', 'dulce'],
     name: 'Invictus',
     olfactoryNotes: ['toronja', 'laurel', 'madera de gaiac'],
     scent: 'Dulces'
@@ -108,7 +108,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Oriental', 'dulce'],
+    intensity: ['oriental', 'dulce'],
     name: 'Invictus Victory',
     olfactoryNotes: ['limón', 'incienso', 'vainilla'],
     scent: 'Dulces'
@@ -116,7 +116,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Amaderado', 'dulce'],
+    intensity: ['amaderado', 'dulce'],
     name: 'Invictus Legend',
     olfactoryNotes: ['sal marina', 'toronja', 'ámbar rojo'],
     scent: 'Dulces'
@@ -124,7 +124,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Amaderado', 'dulce'],
+    intensity: ['amaderado', 'dulce'],
     name: 'Invictus Onyx',
     olfactoryNotes: ['ámbar gris', 'almendra', 'vainilla'],
     scent: 'Dulces'
@@ -132,7 +132,7 @@ export const inventory: Inventory[] = [
   {
     duration: '',
     gender: 'man',
-    intensity: ['Dulce', 'tropical'],
+    intensity: ['dulce', 'tropical'],
     name: 'Invictus Onyx',
     olfactoryNotes: ['coco', 'tonka', 'bergamota'],
     scent: 'Dulces'

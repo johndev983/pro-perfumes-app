@@ -4,9 +4,9 @@ export interface Preferences {
   duration:         string;
   intensity:        string;
   lifestyle:        string;
-  olfactoryNotes:   string;
+  olfactoryNotes:   string[];
   profession:       string;
-  scent:            string;
-  scentToAvoid:     string;
+  scent:            string[];
+  scentToAvoid:     string[];
   season:           string;
 }
